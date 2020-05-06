@@ -1,0 +1,13 @@
+.App{
+    margin-left: 10%;
+}
+.imgCss{
+    width: 100px;
+    padding-top: 10px;
+}
+.input {
+    display: 'flex';
+}
+.textFieldCss{
+    width: 100%;
+}

@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import RouterDeputados from './componentes/deputado'
+import TelaInicial from './componentes/telaInicial'
+import Menu from './componentes/mainDrawer/menu'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    /*Redireciona o app com relação a URL*/
+    <Router>
+      <Menu/>
+      <Switch>
+        <Route exact path="/" component={TelaInicial} /> {/*Redireciona para o componente da tela inicial */}
+        <Route path="/deputado" component={RouterDeputados} /> {/*Redireciona para a lista de rotas do modulo de deputados */}
+      </Switch>
+    </Router>
   );
 }
 
