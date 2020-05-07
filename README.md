@@ -4,7 +4,7 @@
 --->O browser ira abrir na url: localhost:3000
 
 
----------  Explicando o sistema  ---------
+---------  Explicando o sistema  ---------                                                        
 --->Ao clicar no "Deputado", o mesmo redirecionara para a listagem de todos os deputado.
 --->Ao entrar nessa tela, é possivel filtrar e ordenar por nome e sigla do partido. Tambem é possivel
 pressionar o icone na coluna de visualização, que ira redirecionar para a tela de exibição onde exibira os dados do deputado selecionado na tabela.
